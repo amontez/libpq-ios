@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4BA502B4138A58BD00F2653C /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq.a */; };
 		4BA502BA138A58BD00F2653C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502B8138A58BD00F2653C /* InfoPlist.strings */; };
 		4BA502BD138A58BD00F2653C /* libpq_iosTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4BA502BC138A58BD00F2653C /* libpq_iosTests.h */; };
 		4BA502BF138A58BD00F2653C /* libpq_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA502BE138A58BD00F2653C /* libpq_iosTests.m */; };
@@ -42,10 +41,11 @@
 		4BEFA4FA138E789A007002C9 /* libpq-fe.h in Copy Static Headers */ = {isa = PBXBuildFile; fileRef = 4BB312F9138AA0E500692052 /* libpq-fe.h */; };
 		4BEFA4FB138E78A9007002C9 /* postgres_ext.h in Copy Static Headers */ = {isa = PBXBuildFile; fileRef = 4BEFA4E6138E7415007002C9 /* postgres_ext.h */; };
 		4BEFA4FD138E78E8007002C9 /* libpq-fs.h in Copy Static Headers subfolder */ = {isa = PBXBuildFile; fileRef = 4BEFA4D9138E7415007002C9 /* libpq-fs.h */; };
+		FAABDCE616CA263B0087464E /* libpq.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BA5029F138A58BD00F2653C /* libpq.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4BA502B2138A58BD00F2653C /* PBXContainerItemProxy */ = {
+		FAABDCE716CA26580087464E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4BA50296138A58BD00F2653C /* Project object */;
 			proxyType = 1;
@@ -161,8 +161,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAABDCE616CA263B0087464E /* libpq.a in Frameworks */,
 				4BB62EE9138AE13F00CD3BBD /* Foundation.framework in Frameworks */,
-				4BA502B4138A58BD00F2653C /* libpq.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +367,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4BA502B3138A58BD00F2653C /* PBXTargetDependency */,
+				FAABDCE816CA26580087464E /* PBXTargetDependency */,
 			);
 			name = "libpq-iosTests";
 			productName = "libpq-iosTests";
@@ -379,6 +379,9 @@
 /* Begin PBXProject section */
 		4BA50296138A58BD00F2653C /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
 			buildConfigurationList = 4BA50299138A58BD00F2653C /* Build configuration list for PBXProject "libpq-ios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -465,10 +468,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4BA502B3138A58BD00F2653C /* PBXTargetDependency */ = {
+		FAABDCE816CA26580087464E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4BA5029E138A58BD00F2653C /* libpq-ios */;
-			targetProxy = 4BA502B2138A58BD00F2653C /* PBXContainerItemProxy */;
+			targetProxy = FAABDCE716CA26580087464E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -524,6 +527,7 @@
 					"FRONTEND=1",
 					"UNSAFE_STAT_OK=1",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/include";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -547,6 +551,7 @@
 					"FRONTEND=1",
 					"UNSAFE_STAT_OK=1",
 				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				"HEADER_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/include";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -568,6 +573,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libpq-iosTests/libpq-iosTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "libpq-iosTests/libpq-iosTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -588,6 +594,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libpq-iosTests/libpq-iosTests-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "libpq-iosTests/libpq-iosTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
